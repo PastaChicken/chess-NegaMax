@@ -55,6 +55,55 @@ void Chess::FENtoBoard(const std::string& fen) {
     // convert a FEN string to a board
     // FEN is a space delimited string with 6 fields
     // 1: piece placement (from white's perspective)
+    _grid->forEachSquare([](ChessSquare* square, int x, int y) {
+        square->setBit(nullptr);
+    });
+
+    int row = 7;
+    int col = 0;
+
+    for (char ch: fen) {
+        if(ch == '/') {
+            row--;
+            col = 0;
+        } else if (isdigit(ch)) {
+            col += ch - '0';
+        } else {
+            ChessPiece piece;
+            int playerNumber;
+
+            switch (toupper(ch)) {
+                case 'P':
+                    piece = Pawn;
+                    break;
+                case 'N':
+                    piece = Knight;
+                    break;
+                case 'B':
+                    piece = Bishop;
+                    break;
+                case 'R':
+                    piece = Rook;
+                    break;
+                case 'Q':
+                    piece = Queen;
+                    break;
+                case 'K':
+                    piece = King;
+                    break;
+                default:
+                    piece = Pawn; // default to pawn for safety maybe? Not needed if string is always valid
+            }
+            Bit *bit = PieceForPlayer(isupper(ch) ? 0 : 1, piece);
+            ChessSquare* square = _grid->getSquare(col, row);
+            bit->setPosition(square->getPosition());
+            bit->setParent(square);
+            bit->setGameTag(isupper(ch) ? piece : piece + 128);
+            square->setBit(bit);
+            col++;
+        }
+    }
+
     // NOT PART OF THIS ASSIGNMENT BUT OTHER THINGS THAT CAN BE IN A FEN STRING
     // ARE BELOW
     // 2: active color (W or B)

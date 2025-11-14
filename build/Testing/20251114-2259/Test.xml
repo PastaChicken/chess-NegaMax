@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-clang++"
+	BuildStamp="20251114-2259-Experimental"
+	Name="Alfredos-MacBook-Pro.local"
+	Generator="ctest-4.1.1"
+	CompilerName="/usr/bin/clang++"
+	CompilerVersion="17.0.0.17000013"
+	OSName="macOS"
+	Hostname="Alfredos-MacBook-Pro.local"
+	OSRelease="15.5"
+	OSVersion="24F74"
+	OSPlatform="arm64"
+	Is64Bits="1"
+	VendorString="Apple"
+	VendorID="Apple"
+	FamilyID="0"
+	ModelID="0"
+	ModelName="Apple M1 Pro"
+	ProcessorCacheSize="131072"
+	NumberOfLogicalCPU="10"
+	NumberOfPhysicalCPU="10"
+	TotalVirtualMemory="6144"
+	TotalPhysicalMemory="16384"
+	LogicalProcessorsPerPhysical="10"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Nov 14 15:14 PST</StartDateTime>
+		<StartTestTime>1763162068</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 14 15:14 PST</EndDateTime>
+		<EndTestTime>1763162068</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
