@@ -1005,6 +1005,7 @@ CMakeFiles/demo.dir/Application.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/Application.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/imgui/imgui.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Bit.h \
+  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/BitBoard.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/BitHolder.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Checkers.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Chess.h \
@@ -3412,6 +3413,7 @@ CMakeFiles/demo.dir/classes/Chess.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 20
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/imgui/imconfig.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/imgui/imgui.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Bit.h \
+  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/BitBoard.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/BitHolder.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Chess.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/ChessSquare.h \
@@ -12746,6 +12748,8 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 
 /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/imgui/imgui_tables.cpp:
 
+/opt/homebrew/include/GLFW/glfw3native.h:
+
 /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/imgui/imgui_impl_glfw.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h:
@@ -13660,6 +13664,10 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 
 /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Checkers.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/data.h:
+
+/Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/BitBoard.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/dlfcn.h:
 
 /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/imgui/imgui.h:
@@ -13783,8 +13791,6 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigset_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Script.h:
-
-/opt/homebrew/include/GLFW/glfw3native.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h:
 
@@ -14729,8 +14735,6 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Headers/Files.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/data.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_constructible.h:
 

@@ -1011,4 +1011,5 @@ CMakeFiles/demo.dir/classes/Chess.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/BitHolder.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Grid.h \
-  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/ChessSquare.h
+  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/ChessSquare.h \
+  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/BitBoard.h
