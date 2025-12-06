@@ -3420,6 +3420,7 @@ CMakeFiles/demo.dir/classes/Chess.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 20
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Entity.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Game.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Grid.h \
+  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/MagicBitboards.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Player.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Sprite.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/Turn.h
@@ -13588,10 +13589,6 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Headers/ATSFont.h:
 
-/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h:
-
-/opt/homebrew/include/GLFW/glfw3.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFArray.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/strip_signature.h:
@@ -13697,6 +13694,10 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_wchar_t.h:
+
+/opt/homebrew/include/GLFW/glfw3.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_rsize_t.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/17/include/__stddef_ptrdiff_t.h:
 
@@ -15479,6 +15480,8 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdlib.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h:
+
+/Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-base/classes/MagicBitboards.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted.h:
 

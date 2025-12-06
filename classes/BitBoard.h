@@ -46,6 +46,16 @@ public:
         _data |= other;
         return *this;
     }
+    BitBoard &operator&=(const uint64_t other)
+    {
+        _data &= other;
+        return *this;
+    }
+    BitBoard operator^(const uint64_t other) 
+    {
+        _data ^= other;
+        return *this;
+    }
     void printBitboard()
     {
         std::cout << "\n a b c d e f g h\n";
