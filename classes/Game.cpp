@@ -399,4 +399,10 @@ void Game::mouseUp(ImVec2 &location, Entity *entity)
 
 void Game::clearBoardHighlights()
 {
+	Grid* grid = getGrid();
+	if (!grid) return;
+	grid->forEachEnabledSquare([](ChessSquare* square, int x, int y) {
+		if (square)
+			square->setHighlighted(false);
+	});
 }

@@ -5,12 +5,16 @@
 #include "BitBoard.h"
 
 constexpr int pieceSize = 80;
-constexpr int WHITE = -1;
-constexpr int BLACK = +1;
-constexpr uint64_t NotAFile(0xFEFEFEFEFEFEFEFE); //A file mask
-constexpr uint64_t NotHFile(0x7F7F7F7F7F7F7F7F); //H file mask
-constexpr uint64_t Rank3(0x0000000000FF0000); //Rank 3 mask
-constexpr uint64_t Rank6(0x0000FF0000000000); //Rank 6 mask
+constexpr int WHITE = +1;
+constexpr int BLACK = -1;
+constexpr uint64_t NotAFile(0xFEFEFEFEFEFEFEFEULL); //A file mask
+constexpr uint64_t NotHFile(0x7F7F7F7F7F7F7F7FULL); //H file mask
+constexpr uint64_t Rank3(0x0000000000FF0000ULL); //Rank 3 mask
+constexpr uint64_t Rank6(0x0000FF0000000000ULL); //Rank 6 mask
+constexpr uint64_t Rank2(0x000000000000FF00); //Rank 2 mask (white pawns start)
+constexpr uint64_t Rank7(0x00FF000000000000); //Rank 7 mask (black pawns start)
+constexpr int negInfite = -100000;
+constexpr int posInfite = +100000;
 
 enum AllBitBoards {
     WHITE_PAWNS,
@@ -44,6 +48,7 @@ public:
 
     bool canBitMoveFrom(Bit &bit, BitHolder &src) override;
     bool canBitMoveFromTo(Bit &bit, BitHolder &src, BitHolder &dst) override;
+    void bitMovedFromTo(Bit &bit, BitHolder &src, BitHolder &dst) override;
     bool actionForEmptyHolder(BitHolder &holder) override;
 
     void stopGame() override;
@@ -54,6 +59,7 @@ public:
     std::string initialStateString() override;
     std::string stateString() override;
     void setStateString(const std::string &s) override;
+    bool        gameHasAI() override { return true; }
 
     Grid* getGrid() override { return _grid; }
     void updateAI() override;
@@ -74,6 +80,8 @@ private:
     void generateQueenMoves(std::vector<BitMove>& moves, BitBoard queenBoard, uint64_t occupancy, uint64_t friendlies);
 
     std::vector<BitMove> generateAllMoves(const std::string& stateString, int playerColor);
+
+    int negamax(std::string& state, int depth, int alpha, int beta, int playerColor);
     
     int evaluateBoard(const std::string& board);
 
