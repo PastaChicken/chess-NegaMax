@@ -436,7 +436,7 @@ void Chess::updateAI() {
         state[dstSquare] = state[srcSquare];
         state[dstSquare] = state[srcSquare];
         state[srcSquare] = '0';
-        int moveVal = -negamax(state, 3, negInfite, posInfite, HUMAN_PLAYER);
+        int moveVal = -negamax(state, 5, negInfite, posInfite, HUMAN_PLAYER);
         
         state[dstSquare] = oldDst;
         state[srcSquare] = srcPece;
@@ -468,28 +468,26 @@ int Chess::negamax(std::string& state, int depth, int alpha, int beta, int playe
     
     _countMoves++;
     if(depth == 0) {
-        return evaluateBoard(state) * playerColor;
+        return evaluateBoard(state);
     }
 
     auto newMoves = generateAllMoves(state, playerColor);
     
-
+    _countMoves = 0;
     int bestVal = negInfite; // Min value
     for(auto move : newMoves) {
-        int srcSquare = move.from;
-        int dstSquare = move.to;
-        
-        char oldDst = state[dstSquare];
-        char srcPece = state[srcSquare];
-        state[dstSquare] = state[srcSquare];
-        state[dstSquare] = state[srcSquare];
-        state[srcSquare] = '0';
-        int moveVal = -negamax(state, depth - 1, -beta, -alpha, -playerColor);
-        
-        state[dstSquare] = oldDst;
-        state[srcSquare] = srcPece;
-        if(moveVal > bestVal) {
-            bestVal = moveVal;
+        char  boardSave = state[move.to];
+        char pieceMoving = state[move.from];
+
+        state[move.to] = pieceMoving;
+        state[move.from] = '0';
+        bestVal = std::max(bestVal, -negamax(state, depth - 1, -beta, -alpha, -playerColor));
+
+        state[move.from] = pieceMoving;
+        state[move.to] = boardSave;
+        alpha = std::max(alpha, bestVal);
+        if(alpha >= beta) {
+            break; // Beta cutoff
         }
     };
 
