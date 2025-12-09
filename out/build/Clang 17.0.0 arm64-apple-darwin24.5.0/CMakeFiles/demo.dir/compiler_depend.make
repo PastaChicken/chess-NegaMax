@@ -3421,6 +3421,7 @@ CMakeFiles/demo.dir/classes/Chess.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 20
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/Game.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/Grid.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/MagicBitboards.h \
+  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/PieceSquare.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/Player.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/Sprite.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/Turn.h
@@ -12755,6 +12756,8 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 
 /opt/homebrew/include/GLFW/glfw3native.h:
 
+/Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/imgui/imgui_impl_glfw.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_list.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_seek_set.h:
@@ -14367,8 +14370,6 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h:
 
-/Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/imgui/imgui_impl_glfw.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/contention_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/string.h:
@@ -15304,6 +15305,8 @@ CMakeFiles/demo.dir/main_macos.cpp.o: /Users/alfredobarragan/Desktop/Fall\ 2025\
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse.h:
+
+/Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/PieceSquare.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__hash_table:
 

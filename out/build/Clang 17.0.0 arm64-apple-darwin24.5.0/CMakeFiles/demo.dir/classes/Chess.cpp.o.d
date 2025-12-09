@@ -1013,4 +1013,5 @@ CMakeFiles/demo.dir/classes/Chess.cpp.o: \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/Grid.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/ChessSquare.h \
   /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/BitBoard.h \
-  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/MagicBitboards.h
+  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/MagicBitboards.h \
+  /Users/alfredobarragan/Desktop/Fall\ 2025\ Classes\ Folder/CMPM\ 123/chess-NegaMax/classes/PieceSquare.h

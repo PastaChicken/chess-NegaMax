@@ -3,6 +3,7 @@
 #include <limits>
 #include <cmath>
 #include "BitHolder.h"
+#include "PieceSquare.h"
 
 Chess::Chess()
 {
@@ -436,7 +437,7 @@ void Chess::updateAI() {
         state[dstSquare] = state[srcSquare];
         state[dstSquare] = state[srcSquare];
         state[srcSquare] = '0';
-        int moveVal = -negamax(state, 5, negInfite, posInfite, HUMAN_PLAYER);
+        int moveVal = -negamax(state, 3, negInfite, posInfite, HUMAN_PLAYER);
         
         state[dstSquare] = oldDst;
         state[srcSquare] = srcPece;
@@ -473,7 +474,7 @@ int Chess::negamax(std::string& state, int depth, int alpha, int beta, int playe
 
     auto newMoves = generateAllMoves(state, playerColor);
     
-    _countMoves = 0;
+    
     int bestVal = negInfite; // Min value
     for(auto move : newMoves) {
         char  boardSave = state[move.to];
@@ -494,6 +495,8 @@ int Chess::negamax(std::string& state, int depth, int alpha, int beta, int playe
     return bestVal;
 }
 
+#define FLIP(x) (x^56)
+
 int Chess::evaluateBoard(const std::string& state) {
     int values[128];
     values['P'] = 10; values['p'] = -10;
@@ -502,11 +505,41 @@ int Chess::evaluateBoard(const std::string& state) {
     values['R'] = 50; values['r'] = -50;
     values['Q'] = 90; values['q'] = -90;
     values['K'] = 900; values['k'] = -900;
-
     values['0'] = 0;
+
     int score = 0;
+    int square = 0;
     for (char ch: state) {
         score += values[ch];
+        bool isWhite = isupper(ch);
+        switch(ch) {
+            case 'P':    
+            case 'p':
+                score += isWhite ? PawnTableMid[FLIP(square)] : -PawnTableMid[square];
+                break;
+            case 'N':
+            case 'n':
+                score += isWhite ? KnightTableMid[FLIP(square)] : -KnightTableMid[square];
+                break;
+            case 'B':
+            case 'b':
+                score += isWhite ? bishopTable[FLIP(square)] : -bishopTable[square];
+                break;
+            case 'R':
+            case 'r':
+                score += isWhite ? rookTable[FLIP(square)] : -rookTable[square];
+                break;
+            case 'Q':
+            case 'q':
+                score += isWhite ? queenTable[FLIP(square)] : -queenTable[square];
+                break;
+            case 'K':
+            case 'k':
+                score += isWhite ? kingTable[FLIP(square)] : -kingTable[square];
+                break;
+            
+        }
+        square++;
     }
 
     return score;
